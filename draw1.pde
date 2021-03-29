@@ -4,12 +4,10 @@ void draw1(){
   float habaY= (wd) * _ritu * 0.4;
   maxPoints = sikakuPoint(0,0,habaX*4.5,habaY*4.5,maxPoints);
 
-  //float pointX = ((wd)/1.8)*cos(radians(_angle-90));
-  //float PointY = ((he)/1.5)*sin(radians(_angle-90));
-  float pointX = maxPoints[3].x-habaX*1.2*cos(radians(_angle-82));
-  float PointY = maxPoints[3].y-habaY*1.2*sin(radians(_angle-82));
+  float pointX = +habaX*3.62*cos(radians(_angle-73));
+  float PointY = +habaY*3.62*sin(radians(_angle-73));
   minPoints = sikakuPoint(pointX,PointY
-                          ,habaX,habaY,minPoints);
+                          ,habaX/2,habaY/2,minPoints);
   drawQuad(maxPoints);
   drawQuad(minPoints);
   point(pointX,PointY);

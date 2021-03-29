@@ -17,7 +17,7 @@ void setup(){
 }
 
 void draw(){
-  //background(255);
+  background(255);
   translate(width/2, height/2);
   draw1();
   animation();

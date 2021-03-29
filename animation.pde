@@ -1,6 +1,6 @@
 void animation(){
-  kakudai();//拡大
-  kaiten();//回転
+  //kakudai();//拡大
+  //kaiten();//回転
 }
 
 void kakudai(){
