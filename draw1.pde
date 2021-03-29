@@ -8,8 +8,8 @@ void draw1(){
   float PointY = +habaY*3.62*sin(radians(_angle-73));
   minPoints = sikakuPoint(pointX,PointY
                           ,habaX/2,habaY/2,minPoints);
-  drawQuad(maxPoints);
-  drawQuad(minPoints);
+  //drawQuad(maxPoints);
+  //drawQuad(minPoints);
   point(pointX,PointY);
 }
 
