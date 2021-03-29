@@ -10,7 +10,7 @@ void draw1(){
                           ,habaX/2,habaY/2,minPoints);
   //drawQuad(maxPoints);
   //drawQuad(minPoints);
-  point(pointX,PointY);
+  //point(pointX,PointY);
 }
 
 PointObj[] sikakuPoint(float centX, float centY, float habaX, float habaY,PointObj[] objArray) {

@@ -7,8 +7,8 @@ int _bunkatu = 13;// 分割数
 
 PointObj[] minPoints = new PointObj[4];
 PointObj[] maxPoints = new PointObj[4];
-PointObj[][] kabePoints = new PointObj[2][_bunkatu+2];
-PointObj[][] yukaPoints = new PointObj[2][_bunkatu+2];
+PointObj[][] kabePoints = new PointObj[_bunkatu+2][_bunkatu+2];
+PointObj[][] yukaPoints = new PointObj[_bunkatu+2][_bunkatu+2];
 PointObj[][] yokoPoints = new PointObj[3][_bunkatu+2];
 
 void setup(){
@@ -24,5 +24,6 @@ void draw(){
   translate(width/2, height/2);
   draw1();
   draw2();
+  draw3();
   animation();
 }

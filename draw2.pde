@@ -1,15 +1,17 @@
 //壁や床の分割いちを算出
 void draw2(){
-  //縦線
-  kabePoints[0] = bunkatu(maxPoints[1], maxPoints[2], kabePoints[0]);
-  kabePoints[1] = bunkatu(minPoints[1], minPoints[2], kabePoints[1]);
-  //床線
-  yukaPoints[0] = bunkatu(maxPoints[0], maxPoints[1], yukaPoints[0]);
-  yukaPoints[1] = bunkatu(minPoints[0], minPoints[1], yukaPoints[1]);
   //奥行き
   yokoPoints[0] = bunkatu(maxPoints[0], minPoints[0], yokoPoints[0]);
   yokoPoints[1] = bunkatu(maxPoints[1], minPoints[1], yokoPoints[1]);
   yokoPoints[2] = bunkatu(maxPoints[2], minPoints[2], yokoPoints[2]);
+  //縦線
+  for(int i = 0; i < _bunkatu+2; i++){
+    kabePoints[i] = bunkatu(yokoPoints[2][i], yokoPoints[1][i], kabePoints[i]);
+  }
+  //床線
+  for(int i = 0; i < _bunkatu+2; i++){
+    yukaPoints[i] = bunkatu(yokoPoints[0][i], yokoPoints[1][i], yukaPoints[i]);
+  }
   stroke(0);
 }
 
