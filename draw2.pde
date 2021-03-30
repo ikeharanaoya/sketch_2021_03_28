@@ -1,10 +1,10 @@
 //壁や床の分割いちを算出
 void draw2(){
   //奥行き
-  yokoPoints[0] = bunkatu(minPoints[1], maxPoints[1], yokoPoints[0],_renga -1);
-  yokoPoints[1] = bunkatu(minPoints[2], maxPoints[2], yokoPoints[1],_renga -1);
-  yokoPoints[2] = bunkatu(minPoints[0], minPoints[1], yokoPoints[2],_renga -1);
-  yokoPoints[3] = bunkatu(maxPoints[0], maxPoints[1], yokoPoints[3],_renga -1);
+  yokoPoints[0] = bunkatu(minPoints[2], maxPoints[2], yokoPoints[0],_renga -1);
+  yokoPoints[1] = bunkatu(minPoints[1], maxPoints[1], yokoPoints[1],_renga -1);
+  yokoPoints[2] = bunkatu(minPoints[0], maxPoints[0], yokoPoints[2],_renga -1);
+  yokoPoints[3] = bunkatu(minPoints[1], maxPoints[1], yokoPoints[3],_renga -1);
   //縦線
   for(int i = 0; i < _renga; i++){
     kabePoints[i] = bunkatu(yokoPoints[1][i], yokoPoints[0][i], kabePoints[i],_renga -1);
