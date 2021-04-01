@@ -1,6 +1,20 @@
 //レンガ線の描画
 void draw3(){
   int tatehaba = 19;
+  fill(#F2F1F0,200);
+  stroke(#A67D65);
+  strokeWeight(1);
+  //壁の色塗り
+  quad(kabePoints[0][0].x,kabePoints[0][0].y,
+    kabePoints[0][_renga-1].x,kabePoints[0][_renga-1].y,
+    kabePoints[_renga-1][_renga-1].x,kabePoints[_renga-1][_renga-1].y,
+    kabePoints[_renga-1][0].x,kabePoints[_renga-1][0].y);
+  //床の色塗り
+  quad(yukaPoints[0][0].x,yukaPoints[0][0].y,
+    yukaPoints[0][_renga-1].x,yukaPoints[0][_renga-1].y,
+    yukaPoints[_renga-1][_renga-1].x,yukaPoints[_renga-1][_renga-1].y,
+    yukaPoints[_renga-1][0].x,yukaPoints[_renga-1][0].y);
+   fill(255);
   drawLineKabe(kabePoints[0],kabePoints[_renga-1],tatehaba);
   drawLineYuka(yukaPoints,int(tatehaba*1.2));
   drawLengaKabe(kabePoints,tatehaba);
