@@ -26,5 +26,6 @@ void draw(){
   draw1();
   draw2();
   draw3();
+  draw4();
   animation();
 }

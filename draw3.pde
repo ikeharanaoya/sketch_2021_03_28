@@ -14,11 +14,12 @@ void draw3(){
     yukaPoints[0][_renga-1].x,yukaPoints[0][_renga-1].y,
     yukaPoints[_renga-1][_renga-1].x,yukaPoints[_renga-1][_renga-1].y,
     yukaPoints[_renga-1][0].x,yukaPoints[_renga-1][0].y);
-   fill(255);
   drawLineKabe(kabePoints[0],kabePoints[_renga-1],tatehaba);
   drawLineYuka(yukaPoints,int(tatehaba*1.2));
   drawLengaKabe(kabePoints,tatehaba);
   drawLengaYuka(yukaPoints);
+  fill(255);
+  stroke(255);
 }
 
 void drawLineKabe(PointObj[] start, PointObj[] end,int haba){
